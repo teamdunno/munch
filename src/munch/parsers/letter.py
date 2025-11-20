@@ -6,11 +6,18 @@ def letter(input: str) -> MunchResult:
         return (
             False,
             input,
-            input
+            ""
+        )
+
+    if not input[0].isalpha():
+        return (
+            False,
+            input,
+            ""
         )
 
     return (
-        input[0].isalpha(),
+        True,
         input[1:],
         input[0]
     )

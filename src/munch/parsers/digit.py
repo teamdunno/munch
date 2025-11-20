@@ -9,8 +9,15 @@ def digit(input: str) -> MunchResult:
             input
         )
 
+    if not input[0].isdigit():
+        return (
+            False,
+            input,
+            ""
+        )
+
     return (
-        input[0].isdigit(),
+        True,
         input[1:],
         input[0]
     )

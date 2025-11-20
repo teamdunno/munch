@@ -12,6 +12,6 @@ def alt(*args: MunchParser) -> MunchParser:
             except Exception:
                 continue
 
-        return False, input, None
+        return False, input, ""
 
     return wrapped
