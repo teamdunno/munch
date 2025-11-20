@@ -1,0 +1,13 @@
+[project]
+name = "munch"
+version = "0.1.0"
+description = "Like nom, in Python!"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
